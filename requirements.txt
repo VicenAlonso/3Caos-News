@@ -12,6 +12,8 @@ whitenoise
 django-axes
 django-admin-confirm
 reportlab
+django-simple-captcha
+django-recaptcha==1.3.0
 
 #python manage.py runserver
 #pip install -r requirements.txt

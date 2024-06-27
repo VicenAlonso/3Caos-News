@@ -52,13 +52,14 @@ INSTALLED_APPS = [
     'rest_framework',
     'cloudinary',
     'axes',
-    'Noticiero',
+    'captcha',
 
     
 ]
 
 #CONFIGURACION DE RECAPTCHA
-
+RECAPTCHA_PUBLIC_KEY = '6Lf_igIqAAAAAHHil9MmVaqbbROQhOB9xW8SdAbb'
+RECAPTCHA_PRIVATE_KEY = '6Lf_igIqAAAAACcCSoxb4G_ovZ6e5ZcEmB105Y5a'
 #CONFIG AXES
 AUTHENTICATION_BACKENDS = [
     'axes.backends.AxesStandaloneBackend',

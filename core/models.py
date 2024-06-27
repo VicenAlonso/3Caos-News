@@ -2,6 +2,8 @@ from django.db import models
 import json
 import requests
 from cloudinary.models import CloudinaryField
+from django import forms
+from captcha.fields import CaptchaField
 
 # Create your models here.
 class TipoCliente(models.Model):

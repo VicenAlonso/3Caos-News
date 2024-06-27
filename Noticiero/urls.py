@@ -10,6 +10,7 @@ urlpatterns = [
     path('', include('core.urls')),
     path('accounts/', include('django.contrib.auth.urls')),
     path('generate-voucher/', views.generar_voucher_pdf, name='generate-voucher'),
+    path('captcha/', include('captcha.urls')),
     
 ]
     

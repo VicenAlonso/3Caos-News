@@ -232,7 +232,7 @@ def cliente (request):
 
     return render(request, 'core/Clientes/index2.html', aux)
 
-@group_required('cliente')
+
 def noticias(request):
     noticias_list = Noticia.objects.all()  # Obtener todas las noticias
     aux = {
@@ -257,7 +257,7 @@ def principal(request):
     
     return render(request, 'core/Clientes/principal.html', context)
 
-@group_required('reportero')
+
 def addnoticia(request):
     if request.method == 'POST':
         formulario = NoticiasForm(request.POST, files=request.FILES)
@@ -275,7 +275,7 @@ def addnoticia(request):
     }
     return render(request, 'core/Clientes/crud/addnoticia.html', aux)
 
-@group_required('reportero')
+
 def noticiasupdate(request, id):
     noticia = Noticia.objects.get(id=id)  # Cambio realizado aquí
     aux = {
@@ -294,7 +294,7 @@ def noticiasupdate(request, id):
 
     return render(request, 'core/Clientes/crud/updateNoticias.html', aux)
 
-@group_required('reportero')
+
 def noticiasdelete(request, id):
     noticia = Noticia.objects.get(id=id) 
     noticia.delete()
