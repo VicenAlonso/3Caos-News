@@ -2,6 +2,7 @@ from django.forms import ModelForm
 from .models import *
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
+from django import forms
 
 
 
@@ -32,5 +33,8 @@ class CustomUserCreationForm(UserCreationForm):
         model = User
         fields = ['username','first_name','last_name','email','password1','password2']
 
+#prueba de form correo
+class EmailForm(forms.Form):
+    email = forms.EmailField(label='Tu correo electrónico', max_length=100, widget=forms.EmailInput(attrs={'class': 'form-control', 'placeholder': 'Introduce tu correo electrónico'}))
 
 

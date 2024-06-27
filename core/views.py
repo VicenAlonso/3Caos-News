@@ -107,6 +107,21 @@ class NoticiaViewset (viewsets.ModelViewSet):
     serializer_class = NoticiaSerializer
     renderer_classes = [JSONRenderer]
 
+
+def reset (request):
+    return render(request, 'registration/resetpassform.html')
+
+def resetpassdone (request):
+    return render(request, 'registration/resetpassdone.html')
+
+def resetpassconfirm (request):
+    return render(request, 'registration/resetpassconfirm.html')
+
+def resetpasscomplete(request):
+    return render(request, 'registration/resetpasscomplete.html')
+
+
+
 def noticiadetalle(request, id):
     try:
         response = requests.get(f'http://127.0.0.1:8000/api/noticias/{id}/')
