@@ -1,0 +1,27 @@
+{% extends 'core/Clientes/base2.html' %}
+{% load static %}
+{% block secundario %}
+<!-- Recent Sales Start -->
+<div class="container-fluid pt-4 px-4">
+    <div class="bg-secondary text-center rounded p-4">
+        <div class="d-flex align-items-center justify-content-between mb-4">
+            <h6 class="mb-0">API</h6>
+            <a href="">Show All</a>
+        </div>
+        <div class="white_card_body">
+            <div class="row">
+                <div class="col-sm-8 offset-sm-2">
+                    <h1>Detalle noticia</h1>
+                    <h3>ID: {{ noticia.idNoticia }} </h3>
+                    <h3>TITULO: {{ noticia.titulo_noticia }} </h3>
+                    <h3>AUTOR: {{ noticia.Autor }} </h3>
+                    <h3>CUERPO: {{ noticia.cuerpo }} </h3>
+                    <h3>CATEGORIA: {{ noticia.Categoria }} </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Recent Sales End -->
+
+{% endblock %}

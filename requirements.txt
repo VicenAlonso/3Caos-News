@@ -1,0 +1,19 @@
+django
+django-admin-interface
+django-crispy-forms
+crispy-bootstrap4
+pillow
+zeep
+psycopg2-binary
+djangorestframework
+requests
+cloudinary
+whitenoise
+django-axes
+django-admin-confirm
+reportlab
+
+#python manage.py runserver
+#pip install -r requirements.txt
+#pip uninstall -r requirements.txt -y
+

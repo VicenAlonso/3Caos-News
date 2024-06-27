@@ -1,0 +1,17 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block principal %}
+<div class="container mt-4"> 
+    <h1 class="mb-4">Últimas Noticias</h1>
+    {% for noticia in noticias %}
+    <div class="card mb-3">
+        <div class="card-body">
+            <h5 class="card-title">{{ noticia.titulo_noticia }}</h5>
+            <p class="card-text">{{ noticia.resumen }}</p>
+            <a href="{% url 'detalle_noticia' id_noticia=noticia.idNoticia %}" class="btn btn-primary">Ver noticia</a>
+        </div>
+    </div>
+{% endfor %}
+</div>
+{% endblock %}

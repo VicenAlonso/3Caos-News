@@ -1,0 +1,61 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block principal %}
+<div class="container mt-5 mb-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <h2 class="text-center mb-4">Anuncio de Spotify Premium</h2>
+            <p class="text-center">Disfruta de la música sin anuncios y escucha tus canciones favoritas en cualquier lugar con Spotify Premium, ahora en colaboración exclusiva con CaosNews. Esta alianza trae para ti una experiencia única donde podrás acceder a contenidos especiales y promociones diseñadas especialmente para nuestros seguidores.</p>
+            <p class="text-center">¡Obtén tu suscripción Premium ahora!</p>
+            <div class="text-center" id="paypal-button"></div>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-8 offset-md-2">
+            <img src="{% static 'core/assets/img/caostifi.jpeg' %}" alt="Anuncio de Spotify Premium" class="img-fluid">
+        </div>
+    </div>
+</div>
+
+<script src="https://www.paypalobjects.com/api/checkout.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    paypal.Button.render({
+        env: 'sandbox',
+        client: {
+            sandbox: 'AX4WJjerXywYFsPcNxISDJcS3D-dmU7_otzhAd_og8xEm3IJD0m5dugpH4oA03CyCtnu8q7MFGTRWVl5',
+            production: 'demo_production_client_id'
+        },
+        locale: 'en_US',
+        style: {
+            size: 'medium',
+            color: 'blue',
+            shape: 'rect',
+        },
+        commit: true,
+        payment: function (data, actions) {
+            return actions.payment.create({
+                transactions: [{
+                    amount: {
+                        total: '5.99',
+                        currency: 'USD'
+                    }
+                }]
+            });
+        },
+        onAuthorize: function (data, actions) {
+            return actions.payment.execute().then(function () {
+                Swal.fire({
+                    title: '¡Gracias por tu compra!',
+                    text: 'Redirigiendo para generar tu voucher...',
+                    icon: 'success',
+                    confirmButtonText: 'OK'
+                }).then(function () {
+                    window.location.href = 'http://127.0.0.1:8000/generar-voucher/';
+                });
+            });
+        }
+    }, '#paypal-button');
+</script>
+
+{% endblock %}

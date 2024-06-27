@@ -1,0 +1,634 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block principal %}
+<div class="about-area2 gray-bg pt-60 pb-60">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="whats-news-wrapper">
+                    <!-- Heading & Nav Button -->
+                    <div class="row justify-content-between align-items-end mb-15">
+                        <div class="col-xl-4">
+                            <div class="section-tittle mb-30">
+                                <h3>Categorias: </h3>
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-md-9">
+                            <div class="properties__button">
+                                <!--Nav Button  -->
+                                <nav>
+                                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab"
+                                            href="#nav-home" role="tab" aria-controls="nav-home"
+                                            aria-selected="true">Deportes</a>
+                                        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab"
+                                            href="#nav-profile" role="tab" aria-controls="nav-profile"
+                                            aria-selected="false">Tecnologia</a>
+                                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab"
+                                            href="#nav-contact" role="tab" aria-controls="nav-contact"
+                                            aria-selected="false">Medio ambiente</a>
+                                        <a class="nav-item nav-link" id="nav-last-tab" data-toggle="tab"
+                                            href="#nav-last" role="tab" aria-controls="nav-contact"
+                                            aria-selected="false">Musica</a>
+                                        <a class="nav-item nav-link" id="nav-Sports" data-toggle="tab"
+                                            href="#nav-nav-Sport" role="tab" aria-controls="nav-contact"
+                                            aria-selected="false">Politica</a>
+                                    </div>
+                                </nav>
+                                <!--End Nav Button  -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tab content -->
+                    <div class="row">
+                        <div class="col-12">
+                            <!-- Nav Card -->
+                            <div class="tab-content" id="nav-tabContent">
+                                <!-- card one -->
+                                <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                                    aria-labelledby="nav-home-tab">
+                                    <div class="row">
+                                        <div class="col-xl-6 col-lg-6 col-md-6">
+                                            <div class="whats-news-single mb-40 mb-40">
+                                                <div class="whates-img">
+                                                    <img src="{% static 'core/assets/img/gallery/whats_news_details1.jpg'%}"
+                                                        alt="">
+                                                </div>
+                                                <div class="whates-caption whates-caption2">
+                                                    <h4><a href="#">16 años de la icónica foto entre Materazzi y Rui
+                                                            Costa</a></h4>
+                                                    <span>by Alice cloe - Jun 19, 2020 - Deportes</span>
+                                                    <p>Se cumple un año más de aquella postal mítica de Champions League
+                                                        entre el Inter y el Milán en 2005.Dos figuras contemplando el
+                                                        paisaje de los fanáticos italianos al rojo vivo de las bengalas
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6">
+                                            <div class="whats-news-single mb-40 mb-40">
+                                                <div class="whates-img">
+                                                    <img src="{% static 'core/assets/img/gallery/whats_news_details2.jpg'%}"
+                                                        alt="">
+                                                </div>
+                                                <div class="whates-caption whates-caption2">
+                                                    <h4><a href="#">Premiaron la chilena de Alejandro Garnacho en
+                                                            Inglaterra</a>
+                                                    </h4>
+                                                    <span>by Alice cloe - Jun 19, 2020 - Deportes</span>
+                                                    <p>Aquel golazo de chilena que hizo Alejandro Garnacho contra el
+                                                        Everton finalmente fue lo mejor que le pasó al Manchester United
+                                                        durante la temporada 2023/24 de la Premier League</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6">
+                                            <div class="whats-news-single mb-40 mb-40">
+                                                <div class="whates-img">
+                                                    <img src="{% static 'core/assets/img/gallery/whats_news_details3.jpg'%}"
+                                                        alt="">
+                                                </div>
+                                                <div class="whates-caption whates-caption2">
+                                                    <h4><a href="#">Stephen Curry: así pasa los días tras quedar fuera
+                                                            de los Playoffs NBA 2024</a></h4>
+                                                    <span>by Alice cloe - Jun 19, 2020 - Deportes</span>
+                                                    <p>La dinastía de los Golden State Warriors pareció haber terminado
+                                                        en el Play in de esta temporada cuando el equipo quedó eliminado
+                                                        de la posibilidad de disputar los Playoffs NBA 2024</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6">
+                                            <div class="whats-news-single mb-40 mb-40">
+                                                <div class="whates-img">
+                                                    <img src="{% static 'core/assets/img/gallery/whats_news_details4.jpg'%}"
+                                                        alt="">
+                                                </div>
+                                                <div class="whates-caption whates-caption2">
+                                                    <h4><a href="#">¿Qué tan grave es la lesión de Dereck Lively II?</a>
+                                                    </h4>
+                                                    <span>by Alice cloe - Jun 19, 2020 - Deportes</span>
+                                                    <p>El pívot de los Dallas Mavericks, Dereck Lively II, salió del
+                                                        juego en la victoria de su equipo 116-107 en el tercer juego de
+                                                        las Finales de la Conferencia Oeste ante los Minnesota
+                                                        Timberwolves el pasado domingo por la noche.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6">
+                                            <div class="whats-news-single mb-40 mb-40">
+                                                <div class="whates-img">
+                                                    <img src="{% static 'core/assets/img/gallery/whats_news_details5.jpg'%}"
+                                                        alt="">
+                                                </div>
+                                                <div class="whates-caption whates-caption2">
+                                                    <h4><a href="#">“Es agente libre”: Crecen los rumores sobre la
+                                                            partida de LeBron James de Los Angeles Lakers“Es agente
+                                                            libre”: Crecen los rumores sobre la partida de LeBron James
+                                                            de Los Angeles Lakers</a></h4>
+                                                    <span>by Alice cloe - Jun 19, 2020 - Deportes</span>
+                                                    <p>Struggling to sell one multi-million dollar home currently on the
+                                                        market won’t stop actress and singer Jennifer Lopez.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6">
+                                            <div class="whats-news-single mb-40 mb-40">
+                                                <div class="whates-img">
+                                                    <img src="{% static 'core/assets/img/gallery/whats_news_details6.jpg'%}"
+                                                        alt="">
+                                                </div>
+                                                <div class="whates-caption whates-caption2">
+                                                    <h4><a href="#">Arturo Vidal debutó en Colo Colo hace 19 años</a>
+                                                    </h4>
+                                                    <span>by Alice cloe - Jun 19, 2020 - Deportes</span>
+                                                    <p>Colo Colo recordó este martes el estreno oficial de Arturo Vidal
+                                                        con la camiseta del primer equipo, en un partido disputado hace
+                                                        19 años por el torneo nacional</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Card two -->
+                                <div class="tab-pane fade" id="nav-profile" role="tabpanel"
+                                    aria-labelledby="nav-profile-tab">
+                                    <div class="row">
+                                        <div class="col-xl-6 col-lg-6 col-md-6">
+                                            <div class="whats-news-single mb-40 mb-40">
+                                                <div class="whates-img">
+                                                    <img src="{% static 'core/assets/img/gallery/whats_news_details7.jpeg'%}"
+                                                        alt="">
+                                                </div>
+                                                <div class="whates-caption whates-caption2">
+                                                    <h4><a href="#">“La IA será más inteligente que nosotros en menos de
+                                                            30 años”</a></h4>
+                                                    <span>by Alice cloe - Jun 19, 2020 - Tecnologia</span>
+                                                    <p>Al padre de internet en Corea le preocupan los ciberataques que
+                                                        impiden a los ciudadanos el acceso a hospitales y otras
+                                                        infraestructuras críticas</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6">
+                                            <div class="whats-news-single mb-40 mb-40">
+                                                <div class="whates-img">
+                                                    <img src="{% static 'core/assets/img/gallery/whats_news_details8.jpg'%}"
+                                                        alt="">
+                                                </div>
+                                                <div class="whates-caption whates-caption2">
+                                                    <h4><a href="#">Por qué los iPods vuelven a causar furor</a></h4>
+                                                    <span>by Alice cloe - Jun 19, 2020 - Tecnologia</span>
+                                                    <p> el popular reproductor de música con el que Steve Jobs asentó
+                                                        las primeras bases para transformar el mundo de la música. El
+                                                        heredero natural de los walkman se hizo hegemónico durante dos
+                                                        décadas</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6">
+                                            <div class="whats-news-single mb-40 mb-40">
+                                                <div class="whates-img">
+                                                    <img src="{% static 'core/assets/img/gallery/whats_news_details5.png'%}"
+                                                        alt="">
+                                                </div>
+                                                <div class="whates-caption whates-caption2">
+                                                    <h4><a href="#">Secretart for Economic Air
+                                                            plane that looks like</a></h4>
+                                                    <span>by Alice cloe - Jun 19, 2020 - Tecnologia</span>
+                                                    <p>Struggling to sell one multi-million dollar home currently on the
+                                                        market won’t stop actress and singer Jennifer Lopez.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6">
+                                            <div class="whats-news-single mb-40 mb-40">
+                                                <div class="whates-img">
+                                                    <img src="{% static 'core/assets/img/gallery/whats_news_details4.png'%}"
+                                                        alt="">
+                                                </div>
+                                                <div class="whates-caption whates-caption2">
+                                                    <h4><a href="#">Secretart for Economic Air
+                                                            plane that looks like</a></h4>
+                                                    <span>by Alice cloe - Jun 19, 2020 - Tecnologia</span>
+                                                    <p>Struggling to sell one multi-million dollar home currently on the
+                                                        market won’t stop actress and singer Jennifer Lopez.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6">
+                                            <div class="whats-news-single mb-40 mb-40">
+                                                <div class="whates-img">
+                                                    <img src="{% static 'core/assets/img/gallery/whats_news_details5.png'%}"
+                                                        alt="">
+                                                </div>
+                                                <div class="whates-caption whates-caption2">
+                                                    <h4><a href="#">Secretart for Economic Air
+                                                            plane that looks like</a></h4>
+                                                    <span>by Alice cloe - Jun 19, 2020 - Tecnologia</span>
+                                                    <p>Struggling to sell one multi-million dollar home currently on the
+                                                        market won’t stop actress and singer Jennifer Lopez.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6">
+                                            <div class="whats-news-single mb-40 mb-40">
+                                                <div class="whates-img">
+                                                    <img src="{% static 'core/assets/img/gallery/whats_news_details1.png'%}"
+                                                        alt="">
+                                                </div>
+                                                <div class="whates-caption whates-caption2">
+                                                    <h4><a href="#">Secretart for Economic Air
+                                                            plane that looks like</a></h4>
+                                                    <span>by Alice cloe - Jun 19, 2020 - Tecnologia</span>
+                                                    <p>Struggling to sell one multi-million dollar home currently on the
+                                                        market won’t stop actress and singer Jennifer Lopez.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Card three -->
+                                <div class="tab-pane fade" id="nav-contact" role="tabpanel"
+                                    aria-labelledby="nav-contact-tab">
+                                    <div class="row">
+                                        <div class="col-xl-6 col-lg-6 col-md-6">
+                                            <div class="whats-news-single mb-40 mb-40">
+                                                <div class="whates-img">
+                                                    <img src="{% static 'core/assets/img/gallery/whats_news_details9.png'%}"
+                                                        alt="">
+                                                </div>
+                                                <div class="whates-caption whates-caption2">
+                                                    <h4><a href="#">Día Mundial de la Biodiversidad</a></h4>
+                                                    <span>by Alice cloe - Jun 19, 2020 - Medioambiente</span>
+                                                    <p>Este paisaje piloto abarca una superficie aproximada de 75.916
+                                                        hectáreas, abarcando las comunas de Casablanca, Algarrobo y
+                                                        Quilpué de la región de Valparaíso</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6">
+                                            <div class="whats-news-single mb-40 mb-40">
+                                                <div class="whates-img">
+                                                    <img src="{% static 'core/assets/img/gallery/whats_news_details10.jpg'%}"
+                                                        alt="">
+                                                </div>
+                                                <div class="whates-caption whates-caption2">
+                                                    <h4><a href="#">Chile estrena la plataforma de fotomonitoreo en
+                                                            áreas protegidas más grande del mundo</a></h4>
+                                                    <span>by Alice cloe - Jun 19, 2020 - Medioambiente</span>
+                                                    <p>Chile cuenta con la plataforma online de fotomonitoreo en áreas
+                                                        protegidas más grande del mundo en manos de una institución
+                                                        pública.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6">
+                                            <div class="whats-news-single mb-40 mb-40">
+                                                <div class="whates-img">
+                                                    <img src="{% static 'core/assets/img/gallery/whats_news_details1.png'%}"
+                                                        alt="">
+                                                </div>
+                                                <div class="whates-caption whates-caption2">
+                                                    <h4><a href="#">Secretart for Economic Air
+                                                            plane that looks like</a></h4>
+                                                    <span>by Alice cloe - Jun 19, 2020 - Medioambiente</span>
+                                                    <p>Struggling to sell one multi-million dollar home currently on the
+                                                        market won’t stop actress and singer Jennifer Lopez.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6">
+                                            <div class="whats-news-single mb-40 mb-40">
+                                                <div class="whates-img">
+                                                    <img src="{% static 'core/assets/img/gallery/whats_news_details4.png'%}"
+                                                        alt="">
+                                                </div>
+                                                <div class="whates-caption whates-caption2">
+                                                    <h4><a href="#">Secretart for Economic Air
+                                                            plane that looks like</a></h4>
+                                                    <span>by Alice cloe - Jun 19, 2020 - Medioambiente</span>
+                                                    <p>Struggling to sell one multi-million dollar home currently on the
+                                                        market won’t stop actress and singer Jennifer Lopez.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6">
+                                            <div class="whats-news-single mb-40 mb-40">
+                                                <div class="whates-img">
+                                                    <img src="{% static 'core/assets/img/gallery/whats_news_details3.png'%}"
+                                                        alt="">
+                                                </div>
+                                                <div class="whates-caption whates-caption2">
+                                                    <h4><a href="#">Secretart for Economic Air
+                                                            plane that looks like</a></h4>
+                                                    <span>by Alice cloe - Jun 19, 2020 - Medioambiente</span>
+                                                    <p>Struggling to sell one multi-million dollar home currently on the
+                                                        market won’t stop actress and singer Jennifer Lopez.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6">
+                                            <div class="whats-news-single mb-40 mb-40">
+                                                <div class="whates-img">
+                                                    <img src="{% static 'core/assets/img/gallery/whats_news_details6.png'%}"
+                                                        alt="">
+                                                </div>
+                                                <div class="whates-caption whates-caption2">
+                                                    <h4><a href="#">Secretart for Economic Air
+                                                            plane that looks like</a></h4>
+                                                    <span>by Alice cloe - Jun 19, 2020 - Medioambiente</span>
+                                                    <p>Struggling to sell one multi-million dollar home currently on the
+                                                        market won’t stop actress and singer Jennifer Lopez.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- card fure -->
+                                <div class="tab-pane fade" id="nav-last" role="tabpanel" aria-labelledby="nav-last-tab">
+                                    <div class="row">
+                                        <div class="col-xl-6 col-lg-6 col-md-6">
+                                            <div class="whats-news-single mb-40 mb-40">
+                                                <div class="whates-img">
+                                                    <img src="{% static 'core/assets/img/gallery/whats_news_details11.jpg'%}"
+                                                        alt="">
+                                                </div>
+                                                <div class="whates-caption whates-caption2">
+                                                    <h4><a href="#">Drefquila entregó un mensaje a corazón abierto tras
+                                                            el lanzamiento de nuevo disco</a></h4>
+                                                    <span>by Alice cloe - Jun 19, 2020 - Musica</span>
+                                                    <p>“La vida se trata de eso, abrazar lo bueno y lo malo. Comencé
+                                                        este álbum siendo una persona y lo lanzo hoy siendo una persona
+                                                        totalmente diferente”, destacó el músico.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6">
+                                            <div class="whats-news-single mb-40 mb-40">
+                                                <div class="whates-img">
+                                                    <img src="{% static 'core/assets/img/gallery/whats_news_details12.jpg'%}"
+                                                        alt="">
+                                                </div>
+                                                <div class="whates-caption whates-caption2">
+                                                    <h4><a href="#">Kendrick Lamar continúa la "tiraera" contra Drake y
+                                                            publica "Euphoria": "Odio tu forma de hablar"</a></h4>
+                                                    <span>by Alice cloe - Jun 19, 2020 - Musica</span>
+                                                    <p>Kendrick Lamar arremetió contra Drake en su nueva canción
+                                                        ‘Euphoria’, siendo este el último capítulo de una rivalidad </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6">
+                                            <div class="whats-news-single mb-40 mb-40">
+                                                <div class="whates-img">
+                                                    <img src="{% static 'core/assets/img/gallery/whats_news_details4.png'%}"
+                                                        alt="">
+                                                </div>
+                                                <div class="whates-caption whates-caption2">
+                                                    <h4><a href="#">Secretart for Economic Air
+                                                            plane that looks like</a></h4>
+                                                    <span>by Alice cloe - Jun 19, 2020 - Musica</span>
+                                                    <p>Struggling to sell one multi-million dollar home currently on the
+                                                        market won’t stop actress and singer Jennifer Lopez.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6">
+                                            <div class="whats-news-single mb-40 mb-40">
+                                                <div class="whates-img">
+                                                    <img src="{% static 'core/assets/img/gallery/whats_news_details2.png'%}"
+                                                        alt="">
+                                                </div>
+                                                <div class="whates-caption whates-caption2">
+                                                    <h4><a href="#">Secretart for Economic Air
+                                                            plane that looks like</a></h4>
+                                                    <span>by Alice cloe - Jun 19, 2020 - Musica</span>
+                                                    <p>Struggling to sell one multi-million dollar home currently on the
+                                                        market won’t stop actress and singer Jennifer Lopez.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6">
+                                            <div class="whats-news-single mb-40 mb-40">
+                                                <div class="whates-img">
+                                                    <img src="{% static 'core/assets/img/gallery/whats_news_details5.png'%}"
+                                                        alt="">
+                                                </div>
+                                                <div class="whates-caption whates-caption2">
+                                                    <h4><a href="#">Secretart for Economic Air
+                                                            plane that looks like</a></h4>
+                                                    <span>by Alice cloe - Jun 19, 2020 - Musica</span>
+                                                    <p>Struggling to sell one multi-million dollar home currently on the
+                                                        market won’t stop actress and singer Jennifer Lopez.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6">
+                                            <div class="whats-news-single mb-40 mb-40">
+                                                <div class="whates-img">
+                                                    <img src="{% static 'core/assets/img/gallery/'%}"
+                                                        alt="">
+                                                </div>
+                                                <div class="whates-caption whates-caption2">
+                                                    <h4><a href="#">Secretart for Economic Air
+                                                        plane that looks like</a></h4>
+                                                    <span>by Alice cloe - Jun 19, 2020 - Musica</span>
+                                                    <p>Struggling to sell one multi-million dollar home currently on the
+                                                        market won’t stop actress and singer Jennifer Lopez.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- card Five -->
+                                <div class="tab-pane fade" id="nav-nav-Sport" role="tabpanel"
+                                    aria-labelledby="nav-Sports">
+                                    <div class="row">
+                                        <div class="col-xl-6 col-lg-6 col-md-6">
+                                            <div class="whats-news-single mb-40 mb-40">
+                                                <div class="whates-img">
+                                                    <img src="{% static 'core/assets/img/gallery/milei (1).jpg'%}"
+                                                        alt="">
+                                                </div>
+                                                <div class="whates-caption whates-caption2">
+                                                    <h4><a href="#">Milei en la presentación de su libro: "Lo que
+                                                        importa es tener el poder</a></h4>
+                                                    <span>by Alice cloe - Jun 19, 2020 - Politica</span>
+                                                    <p>En la presentación de su libro “Capitalismo, socialismo y la
+                                                        trampa neoclásica”, el presidente Javier Milei comparó a la
+                                                        política con el fútbol y destacó la importancia de "tener el
+                                                        poder". </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6">
+                                            <div class="whats-news-single mb-40 mb-40">
+                                                <div class="whates-img">
+                                                    <img src="{% static 'core/assets/img/gallery/trum.jpg'%}"
+                                                        alt="">
+                                                </div>
+                                                <div class="whates-caption whates-caption2">
+                                                    <h4><a href="#">¿Derrota para Trump? fue abucheado en la convención
+                                                            del Partido Libertario</a></h4>
+                                                    <span>by Alice cloe - Jun 19, 2020 - Politica</span>
+                                                    <p>Donald Trump, candidato republicano a la presidencia de Estados
+                                                        Unidos, se presentó este fin de semana ante los simpatizantes
+                                                        del Partido Libertario.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6">
+                                            <div class="whats-news-single mb-40 mb-40">
+                                                <div class="whates-img">
+                                                    <img src="{% static 'core/assets/img/gallery/whats_news_details3.png'%}"
+                                                        alt="">
+                                                </div>
+                                                <div class="whates-caption whates-caption2">
+                                                    <h4><a href="#">Secretart for Economic Air
+                                                            plane that looks like</a></h4>
+                                                    <span>by Alice cloe - Jun 19, 2020 - Politica</span>
+                                                    <p>Struggling to sell one multi-million dollar home currently on the
+                                                        market won’t stop actress and singer Jennifer Lopez.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6">
+                                            <div class="whats-news-single mb-40 mb-40">
+                                                <div class="whates-img">
+                                                    <img src="{% static 'core/assets/img/gallery/whats_news_details4.png'%}"
+                                                        alt="">
+                                                </div>
+                                                <div class="whates-caption whates-caption2">
+                                                    <h4><a href="#">Secretart for Economic Air
+                                                            plane that looks like</a></h4>
+                                                    <span>by Alice cloe - Jun 19, 2020 - Politica</span>
+                                                    <p>Struggling to sell one multi-million dollar home currently on the
+                                                        market won’t stop actress and singer Jennifer Lopez.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6">
+                                            <div class="whats-news-single mb-40 mb-40">
+                                                <div class="whates-img">
+                                                    <img src="{% static 'core/assets/img/gallery/whats_news_details5.png'%}"
+                                                        alt="">
+                                                </div>
+                                                <div class="whates-caption whates-caption2">
+                                                    <h4><a href="#">Secretart for Economic Air
+                                                            plane that looks like</a></h4>
+                                                    <span>by Alice cloe - Jun 19, 2020 - Politica</span>
+                                                    <p>Struggling to sell one multi-million dollar home currently on the
+                                                        market won’t stop actress and singer Jennifer Lopez.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6">
+                                            <div class="whats-news-single mb-40 mb-40">
+                                                <div class="whates-img">
+                                                    <img src="{% static 'core/assets/img/gallery/whats_news_details6.png'%}"
+                                                        alt="">
+                                                </div>
+                                                <div class="whates-caption whates-caption2">
+                                                    <h4><a href="#">Secretart for Economic Air
+                                                            plane that looks like</a></h4>
+                                                    <span>by Alice cloe - Jun 19, 2020 - Politica</span>
+                                                    <p>Struggling to sell one multi-million dollar home currently on the
+                                                        market won’t stop actress and singer Jennifer Lopez.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Nav Card -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <!-- Flow Socail -->
+                <div class="single-follow mb-45">
+                    <div class="single-box">
+                        <div class="follow-us d-flex align-items-center">
+                            <div class="follow-social">
+                                <a href="#"><img src="assets/img/news/icon-fb.png" alt=""></a>
+                            </div>
+                            <div class="follow-count">
+                                <span>8,045</span>
+                                <p>Fans</p>
+                            </div>
+                        </div>
+                        <div class="follow-us d-flex align-items-center">
+                            <div class="follow-social">
+                                <a href="#"><img src="assets/img/news/icon-tw.png" alt=""></a>
+                            </div>
+                            <div class="follow-count">
+                                <span>8,045</span>
+                                <p>Fans</p>
+                            </div>
+                        </div>
+                        <div class="follow-us d-flex align-items-center">
+                            <div class="follow-social">
+                                <a href="#"><img src="assets/img/news/icon-ins.png" alt=""></a>
+                            </div>
+                            <div class="follow-count">
+                                <span>8,045</span>
+                                <p>Fans</p>
+                            </div>
+                        </div>
+                        <div class="follow-us d-flex align-items-center">
+                            <div class="follow-social">
+                                <a href="#"><img src="assets/img/news/icon-yo.png" alt=""></a>
+                            </div>
+                            <div class="follow-count">
+                                <span>8,045</span>
+                                <p>Fans</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- New Poster -->
+                <div class="news-poster d-none d-lg-block">
+                    <img src="assets/img/news/news_card.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About US End -->
+<!--Start pagination -->
+<div class="pagination-area  gray-bg pb-45">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="single-wrap">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-start">
+                            <li class="page-item"><a class="page-link" href="#">
+                                    <!-- SVG icon -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="24px" height="15px">
+                                        <path fill-rule="evenodd" fill="rgb(221, 221, 221)"
+                                            d="M8.142,13.118 L6.973,14.135 L0.127,7.646 L0.127,6.623 L6.973,0.132 L8.087,1.153 L2.683,6.413 L23.309,6.413 L23.309,7.856 L2.683,7.856 L8.142,13.118 Z" />
+                                    </svg>
+                                    </span></a></li>
+                            <li class="page-item active"><a class="page-link" href="#">01</a></li>
+                            <li class="page-item"><a class="page-link" href="#">02</a></li>
+                            <li class="page-item"><a class="page-link" href="#">03</a></li>
+                            <li class="page-item"><a class="page-link" href="#">
+                                    <!-- SVG iocn -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="40px" height="15px">
+                                        <path fill-rule="evenodd" fill="rgb(255, 11, 11)"
+                                            d="M31.112,13.118 L32.281,14.136 L39.127,7.646 L39.127,6.624 L32.281,0.132 L31.167,1.154 L36.571,6.413 L0.491,6.413 L0.491,7.857 L36.571,7.857 L31.112,13.118 Z" />
+                                    </svg>
+                                    </span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

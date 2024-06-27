@@ -1,0 +1,20 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block principal %}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-10">
+            <h3 class="display-4">{{ noticia.titulo_noticia }}</h3>
+            <p class="font-italic">Por: {{ noticia.Autor }}</p>
+            <p class="font-weight-light">{{ noticia.fecha_subida }}</p>
+            <img src="{{ noticia.imagen.url }}" alt="{{ noticia.titulo_noticia }}" class="img-fluid my-4">
+            
+            <h2>{{ noticia.encabezado }}</h2>
+            <p>{{ noticia.cuerpo }}</p>
+
+            <!-- Aquí puedes mostrar más detalles de la noticia si lo deseas -->
+        </div>
+    </div>
+</div>
+{% endblock %}

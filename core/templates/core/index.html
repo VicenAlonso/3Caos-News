@@ -1,0 +1,599 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block principal %}
+<!-- Trending Area Start -->
+<div class="trending-area fix pt-25 gray-bg">
+    <div class="container">
+        
+        <div class="trending-main">
+            
+            <div class="row">
+                
+                <div class="col-lg-8">
+                    <!-- Trending Top -->
+                    <div class="slider-active">
+                        <!-- Single -->
+                        {% for noticia in noticias %}
+                        <div class="single-slider">
+                            <div class="trending-top mb-30">
+                                <div class="trend-top-img">
+                                    <img src="{{ noticia.imagen.url }}" alt="{{ noticia.imagen }}">
+                                    <div class="trend-top-cap">
+                                        <span class="bgr" data-animation="fadeInUp" data-delay=".2s"
+                                            data-duration="1000ms"> {{ noticia.Categoria }} </span>
+                                        <h2><a href="{% url 'latest_news' %}" data-animation="fadeInUp"
+                                                data-delay=".4s" data-duration="1000ms"> {{ noticia.titulo_noticia }} </a></h2>
+                                        <p data-animation="fadeInUp" data-delay=".6s" data-duration="1000ms">
+                                            {{ noticia.fecha_subida }}|{{ noticia.Autor }} </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        {% endfor %}
+                    </div>
+                    
+                </div>
+               
+                <!-- Right content -->
+                <div class="col-lg-4">
+                    <!-- Trending Top -->
+                    <div class="row">
+                        <div class="col-lg-12 col-md-6 col-sm-6">
+                            <div class="trending-top mb-30">
+                                <div class="trend-top-img">
+                                    <img src="{% static 'core/assets/img/trending/trending_top3.avif'%}" alt="">
+                                    <div class="trend-top-cap trend-top-cap2">
+                                        <span class="bgb">MedioAmbiente</span>
+                                        <h2><a href="{% url 'latest_news' %}">Fenómeno climático se aproxima al país:
+                                                las probabilidades aumentaron a más de 60%</a></h2>
+                                        <p>Carlos Montes - HACE 6 HORAS</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-6 col-sm-6">
+                            <div class="trending-top mb-30">
+                                <div class="trend-top-img">
+                                    <img src="{% static 'core/assets/img/trending/trending_toppp4.jpg'%}"
+                                        alt="">
+                                    <div class="trend-top-cap trend-top-cap2">
+                                        <span class="bgg">TECNOLOGIA </span>
+                                        <h2><a href="{% url 'latest_news' %}">Guía sencilla para entender la alucinante
+                                                tecnología cuántica que cambiará nuestras vidas</a></h2>
+                                        <p>Jim Al-Khalili - 12 mayo 2024</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!-- Trending Area End -->
+<!-- Whats New Start -->
+<section class="whats-news-area pt-50 pb-20 gray-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="whats-news-wrapper">
+                    <!-- Heading & Nav Button -->
+                    <div class="row justify-content-between align-items-end mb-15">
+                        <div class="col-xl-4">
+                            <div class="section-tittle mb-30">
+                                <h3>Que hay de nuevo</h3>
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-md-9">
+                            <div class="properties__button">
+                                <!--Nav Button  -->
+                                <nav>
+                                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab"
+                                            href="#nav-home" role="tab" aria-controls="nav-home"
+                                            aria-selected="true">Deportes</a>
+                                        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab"
+                                            href="#nav-profile" role="tab" aria-controls="nav-profile"
+                                            aria-selected="false">Viajes</a>
+                                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab"
+                                            href="#nav-contact" role="tab" aria-controls="nav-contact"
+                                            aria-selected="false">Fashion</a>
+                                        <a class="nav-item nav-link" id="nav-last-tab" data-toggle="tab"
+                                            href="#nav-last" role="tab" aria-controls="nav-contact"
+                                            aria-selected="false">
+                                            Estilo de vida</a>
+                                        <a class="nav-item nav-link" id="nav-Sports" data-toggle="tab"
+                                            href="#nav-nav-Sport" role="tab" aria-controls="nav-contact"
+                                            aria-selected="false">Tecnologia</a>
+                                    </div>
+                                </nav>
+                                <!--End Nav Button  -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tab content -->
+                    <div class="row">
+                        <div class="col-12">
+                            <!-- Nav Card -->
+                            <div class="tab-content" id="nav-tabContent">
+                                <!-- card one -->
+                                <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                                    aria-labelledby="nav-home-tab">
+                                    <div class="row">
+                                        <!-- Left Details Caption -->
+                                        <div class="col-xl-6 col-lg-12">
+                                            <div class="whats-news-single mb-40 mb-40">
+                                                <div class="whates-img">
+                                                    <img src="{% static 'core/assets/img/gallery/que_hay_de_nuevo1.png'%}"
+                                                        alt="">
+                                                </div>
+                                                <div class="whates-caption">
+                                                    <h4><a href="{% url 'latest_news' %}">Kylian Mbappé fue elegido
+                                                            mejor jugador de la Ligue 1 en su último año en
+                                                            Francia</a></h4>
+                                                    <span>13:15 - 13/05/2024</span>
+                                                    <p>Kylian Mbappé se adjudicó este lunes 13 de abril el
+                                                        premio
+                                                        a mejor jugador de la temporada en la Ligue 1,
+                                                        justamente en el que fue su último año en el fútbol
+                                                        francés al haber anunciado oficialmente que no seguirá
+                                                        en Paris Saint-Germain. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Right single caption -->
+                                        <div class="col-xl-6 col-lg-12">
+                                            <div class="row">
+                                                <!-- single -->
+                                                <div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
+                                                    <div class="whats-right-single mb-20">
+                                                        <div class="whats-right-img">
+                                                            <img src="{% static 'core/assets/img/gallery/que_hay_de_nuevo2.jpg'%}"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="whats-right-cap">
+                                                            <span class="colorb">Deportes</span>
+                                                            <h4><a href="{% url 'latest_news' %}">Colo Colo goleó antes
+                                                                    de su importante
+                                                                    partido por Libertadores</a></h4>
+                                                            <p>12/05/2024</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
+                                                    <div class="whats-right-single mb-20">
+                                                        <div class="whats-right-img">
+                                                            <img src="{% static 'core/assets/img/gallery/que_hay_de_nuevo5.jpg'%}"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="whats-right-cap">
+                                                            <span class="colorb">Deportes</span>
+                                                            <h4><a href="{% url 'latest_news' %}">Fiesta merengue: Real
+                                                                    Madrid celebró su título 36</a></h4>
+                                                            <p>12/05/2024</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
+                                                    <div class="whats-right-single mb-20">
+                                                        <div class="whats-right-img">
+                                                            <img src="{% static 'core/assets/img/gallery/que_hay_de_nuevo3.jpg'%}"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="whats-right-cap">
+                                                            <span class="colorg">Deportes</span>
+                                                            <h4><a href="{% url 'latest_news' %}">Nicolás Jarry tras
+                                                                    sus dos victorias en Roma: Espero jugar cada
+                                                                    vez mejor</a></h4>
+                                                            <p>Jun 19, 2020</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
+                                                    <div class="whats-right-single mb-20">
+                                                        <div class="whats-right-img">
+                                                            <img src="{% static 'core/assets/img/gallery/que_hay_de_nuevo4.jpg'%}"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="whats-right-cap">
+                                                            <span class="colorr">Deportes</span>
+                                                            <h4><a href="{% url 'latest_news' %}">Los Pacers arrollan a
+                                                                    los Knicks para empatar la serie</a></h4>
+                                                            <p>13 mayo, 2024</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Card two -->
+                                <div class="tab-pane fade" id="nav-profile" role="tabpanel"
+                                    aria-labelledby="nav-profile-tab">
+                                    <div class="row">
+
+                                        <!-- Card three -->
+                                        <div class="tab-pane fade" id="nav-contact" role="tabpanel"
+                                            aria-labelledby="nav-contact-tab">
+                                            <div class="row">
+                                                <!-- Left Details Caption -->
+                                                <div class="col-xl-6">
+                                                    <div class="whats-news-single mb-40">
+                                                        <div class="whates-img">
+                                                            <img src="{% static 'core/assets/img/gallery/whats_right_img4.png'%}"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="whates-caption">
+                                                            <h4><a href="{% url 'latest_news' %}">Secretart for Economic Air
+                                                                    plane that looks like</a></h4>
+                                                            <span>by Alice cloe - Jun 19, 2020</span>
+                                                            <p>Struggling to sell one multi-million dollar home
+                                                                currently on
+                                                                the market won’t stop actress and singer
+                                                                Jennifer Lopez.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
+                                                    <div class="whats-right-single mb-20">
+                                                        <div class="whats-right-img">
+                                                            <img src="{% static 'core/assets/img/gallery/whats_right_img2.png'%}"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="whats-right-cap">
+                                                            <span class="colorb">FASHION</span>
+                                                            <h4><a href="{% url 'latest_news' %}">Portrait of group of
+                                                                    friends ting eat. market in.</a></h4>
+                                                            <p>Jun 19, 2020</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
+                                                    <div class="whats-right-single mb-20">
+                                                        <div class="whats-right-img">
+                                                            <img src="{% static 'core/assets/img/gallery/whats_right_img3.png'%}"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="whats-right-cap">
+                                                            <span class="colorg">FASHION</span>
+                                                            <h4><a href="{% url 'latest_news' %}">Portrait of group of
+                                                                    friends ting eat. market in.</a></h4>
+                                                            <p>Jun 19, 2020</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
+                                                    <div class="whats-right-single mb-20">
+                                                        <div class="whats-right-img">
+                                                            <img src="{% static 'core/assets/img/gallery/whats_right_img4.png'%}"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="whats-right-cap">
+                                                            <span class="colorr">FASHION</span>
+                                                            <h4><a href="{% url 'latest_news' %}">Portrait of group of
+                                                                    friends ting eat. market in.</a></h4>
+                                                            <p>Jun 19, 2020</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- card fure -->
+                                <div class="tab-pane fade" id="nav-last" role="tabpanel"
+                                    aria-labelledby="nav-last-tab">
+                                    <div class="row">
+                                        <!-- Left Details Caption -->
+                                        <div class="col-xl-6">
+                                            <div class="whats-news-single mb-40">
+                                                <div class="whates-img">
+                                                    <img src="{% static 'core/assets/img/gallery/whats_right_img2.png'%}"
+                                                        alt="">
+                                                </div>
+                                                <div class="whates-caption">
+                                                    <h4><a href="{% url 'latest_news' %}">Secretart for Economic Air
+                                                            plane that looks like</a></h4>
+                                                    <span>by Alice cloe - Jun 19, 2020</span>
+                                                    <p>Struggling to sell one multi-million dollar home
+                                                        currently on
+                                                        the market won’t stop actress and singer Jennifer Lopez.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Right single caption -->
+                                        <div class="col-xl-6 col-lg-12">
+                                            <div class="row">
+                                                <!-- single -->
+                                                <div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
+                                                    <div class="whats-right-single mb-20">
+                                                        <div class="whats-right-img">
+                                                            <img src="{% static 'core/assets/img/gallery/whats_right_img1.png'%}"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="whats-right-cap">
+                                                            <span class="colorb">FASHION</span>
+                                                            <h4><a href="{% url 'latest_news' %}">Portrait of group of
+                                                                    friends ting eat. market in.</a></h4>
+                                                            <p>Jun 19, 2020</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
+                                                    <div class="whats-right-single mb-20">
+                                                        <div class="whats-right-img">
+                                                            <img src="{% static 'core/assets/img/gallery/whats_right_img2.png'%}"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="whats-right-cap">
+                                                            <span class="colorb">FASHION</span>
+                                                            <h4><a href="{% url 'latest_news' %}">Portrait of group of
+                                                                    friends ting eat. market in.</a></h4>
+                                                            <p>Jun 19, 2020</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
+                                                    <div class="whats-right-single mb-20">
+                                                        <div class="whats-right-img">
+                                                            <img src="{% static 'core/assets/img/gallery/whats_right_img3.png'%}"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="whats-right-cap">
+                                                            <span class="colorg">FASHION</span>
+                                                            <h4><a href="{% url 'latest_news' %}">Portrait of group of
+                                                                    friends ting eat. market in.</a></h4>
+                                                            <p>Jun 19, 2020</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
+                                                    <div class="whats-right-single mb-20">
+                                                        <div class="whats-right-img">
+                                                            <img src="{% static 'core/assets/img/gallery/whats_right_img4.png'%}"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="whats-right-cap">
+                                                            <span class="colorr">FASHION</span>
+                                                            <h4><a href="{% url 'latest_news' %}">Portrait of group of
+                                                                    friends ting eat. market in.</a></h4>
+                                                            <p>Jun 19, 2020</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- card Five -->
+                                <div class="tab-pane fade" id="nav-nav-Sport" role="tabpanel"
+                                    aria-labelledby="nav-Sports">
+                                    <div class="row">
+                                        <!-- Left Details Caption -->
+                                        <div class="col-xl-6">
+                                            <div class="whats-news-single mb-40">
+                                                <div class="whates-img">
+                                                    <img src="{% static 'core/assets/img/gallery/whats_news_details1.png'%}"
+                                                        alt="">
+                                                </div>
+                                                <div class="whates-caption">
+                                                    <h4><a href="{% url 'latest_news' %}">Secretart for Economic Air
+                                                            plane that looks like</a></h4>
+                                                    <span>by Alice cloe - Jun 19, 2020</span>
+                                                    <p>Struggling to sell one multi-million dollar home
+                                                        currently on
+                                                        the market won’t stop actress and singer Jennifer Lopez.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Right single caption -->
+                                        <div class="col-xl-6 col-lg-12">
+                                            <div class="row">
+                                                <!-- single -->
+                                                <div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
+                                                    <div class="whats-right-single mb-20">
+                                                        <div class="whats-right-img">
+                                                            <img src="{% static 'core/assets/img/gallery/whats_right_img1.png'%}"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="whats-right-cap">
+                                                            <span class="colorb">FASHION</span>
+                                                            <h4><a href="{% url 'latest_news' %}">Portrait of group of
+                                                                    friends ting eat. market in.</a></h4>
+                                                            <p>Jun 19, 2020</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
+                                                    <div class="whats-right-single mb-20">
+                                                        <div class="whats-right-img">
+                                                            <img src="{% static 'core/assets/img/gallery/whats_right_img2.png'%}"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="whats-right-cap">
+                                                            <span class="colorb">FASHION</span>
+                                                            <h4><a href="{% url 'latest_news' %}">Portrait of group of
+                                                                    friends ting eat. market in.</a></h4>
+                                                            <p>Jun 19, 2020</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
+                                                    <div class="whats-right-single mb-20">
+                                                        <div class="whats-right-img">
+                                                            <img src="{% static 'core/assets/img/gallery/whats_right_img3.png'%}"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="whats-right-cap">
+                                                            <span class="colorg">FASHION</span>
+                                                            <h4><a href="{% url 'latest_news' %}">Portrait of group of
+                                                                    friends ting eat. market in.</a></h4>
+                                                            <p>Jun 19, 2020</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
+                                                    <div class="whats-right-single mb-20">
+                                                        <div class="whats-right-img">
+                                                            <img src="{% static 'core/assets/img/gallery/whats_right_img4.png'%}"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="whats-right-cap">
+                                                            <span class="colorr">FASHION</span>
+                                                            <h4><a href="{% url 'latest_news' %}">Portrait of group of
+                                                                    friends ting eat. market in.</a></h4>
+                                                            <p>Jun 19, 2020</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Nav Card -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Banner -->
+                <div class="banner-one mt-20 mb-30">
+                    <img src="{% static 'core/assets/img/gallery/spoti.jpg'%}" alt="">
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <!-- Flow Socail -->
+                <div class="single-follow mb-45">
+                    <div class="single-box">
+                        <div class="follow-us d-flex align-items-center">
+                            <div class="follow-social">
+                                <a href="#"><img src="{% static 'core/assets/img/news/icon-fb.png'%}"
+                                        alt=""></a>
+                            </div>
+                            <div class="follow-count">
+                                <span>8,045</span>
+                                <p>Fans</p>
+                            </div>
+                        </div>
+                        <div class="follow-us d-flex align-items-center">
+                            <div class="follow-social">
+                                <a href="#"><img src="{% static 'core/assets/img/news/icon-tw.png'%}"
+                                        alt=""></a>
+                            </div>
+                            <div class="follow-count">
+                                <span>8,045</span>
+                                <p>Fans</p>
+                            </div>
+                        </div>
+                        <div class="follow-us d-flex align-items-center">
+                            <div class="follow-social">
+                                <a href="#"><img src="{% static 'core/assets/img/news/icon-ins.png'%}"
+                                        alt=""></a>
+                            </div>
+                            <div class="follow-count">
+                                <span>8,045</span>
+                                <p>Fans</p>
+                            </div>
+                        </div>
+                        <div class="follow-us d-flex align-items-center">
+                            <div class="follow-social">
+                                <a href="#"><img src="{% static 'core/assets/img/news/icon-yo.png'%}"
+                                        alt=""></a>
+                            </div>
+                            <div class="follow-count">
+                                <span>8,045</span>
+                                <p>Fans</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mosta Recent Area -->
+                <div class="most-recent-area">
+                    <!-- Section Tittle -->
+                    <div class="small-tittle mb-20">
+                        <h4>Mas Reciente</h4>
+                    </div>
+                    <!-- Details -->
+                    <div class="most-recent mb-40">
+                        <div class="most-recent-img">
+                            <img src="{% static 'core/assets/img/gallery/reciente1.jpg'%}" alt="">
+                            <div class="most-recent-cap">
+                                <span class="bgbeg">Vogue</span>
+                                <h4><a href="latest_news.html">Por qué evitar conectar estufas eléctricas a
+                                        alargadores</a></h4>
+                                <p>Vicente | Reciente Mente</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single -->
+                    <div class="most-recent-single">
+                        <div class="most-recent-images">
+                            <img src="{% static 'core/assets/img/gallery/reciente2 (1).jpg'%}" alt="">
+                        </div>
+                        <div class="most-recent-capt">
+                            <h4><a href="latest_news.html">La marraqueta se eleva como el tercer mejor pan del mundo</a></h4>
+                            <p>Enrique | Hace 15 minutos</p>
+                        </div>
+                    </div>
+                    <!-- Single -->
+                    <div class="most-recent-single">
+                        <div class="most-recent-images">
+                            <img src="{% static 'core/assets/img/gallery/reciente3 (1).jpg'%}" alt="">
+                        </div>
+                        <div class="most-recent-capt">
+                            <h4><a href="latest_news.html">Llega "Uber Pet" a Chile: ahora se podrá viajar con mascotas</a>
+                            </h4>
+                            <p>Mariela | Hace 1 hora Aprox.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

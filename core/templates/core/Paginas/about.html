@@ -1,0 +1,117 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block principal %}
+<div class="about-details section-padding30">
+    <div class="container">
+        <div class="row">
+            <div class="offset-xl-1 col-lg-8">
+                <div class="about-details-cap mb-50">
+                    <h4>Nuestro objetivo</h4>
+                    <p>En Caos News, queremos ser tu fuente confiable de información. Nos comprometemos a brindarte
+                        noticias precisas, imparciales y relevantes para que estés siempre bien informado. Queremos
+                        informar, educar, empoderar e innovar, utilizando la tecnología para llegar a ti de manera
+                        eficiente. En un mundo lleno de información, trabajamos para ofrecerte noticias basadas en una
+                        investigación meticulosa y un reportaje preciso. Nuestro objetivo es inspirarte y motivarte a
+                        ser parte activa de nuestra comunidad, guiándote con integridad y veracidad.</p>
+                </div>
+                <div class="about-details-cap mb-50">
+                    <h4>Nuestra visión</h4>
+                    <p>Nuestra Visión en Caos News es ser un faro de verdad en medio del caos informativo. Nos
+                        comprometemos a ofrecer noticias precisas y verificadas en todo momento, cambiando la forma en
+                        que se perciben las noticias y ofreciendo una perspectiva única y profunda de los eventos que
+                        impactan en nuestro mundo. Buscamos informar, educar y empoderar a nuestros lectores para que
+                        puedan tomar decisiones informadas y contribuir a un cambio positivo en la sociedad. Nos
+                        esforzamos por ser líderes en innovación y calidad periodística, ofreciendo a nuestros lectores
+                        una experiencia única y valiosa. Queremos construir una comunidad en la que la audiencia sea
+                        parte fundamental, fomentando un diálogo abierto y honesto con nuestros lectores.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--? About Area Start-->
+<div class="support-company-area pt-100 pb-100 section-bg fix"
+    data-background="{% static 'core/assets/img/gallery/azulbg.jpg'%}">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-xl-6 col-lg-6">
+                <div class="support-location-img">
+                    <img src="{% static 'core/assets/img/gallery/about.png'%}" alt="">
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6">
+                <div class="right-caption">
+                    <!-- Section Tittle -->
+                    <div class="section-tittles section-tittles2 mb-50">
+                        <h2>Nuestro Equipo</h2>
+                        <span style="color: yellow;">Trabajamos con profesionales del área</span>
+                    </div>
+                    
+                    <div class="support-caption">
+                        <p class="pera-top">Nuestro Equipo en Caos News está conformado por profesionales del área
+                            comprometidos con la excelencia y la veracidad en la información. Trabajamos día a día para
+                            ofrecer noticias relevantes y de calidad, contando con un equipo multidisciplinario que
+                            abarca todas las áreas del periodismo y la comunicación. Nos enorgullece trabajar juntos
+                            para brindar a nuestros lectores una experiencia informativa completa y confiable.</p>
+                        <a href="about.html" class="btn post-btn ">Mas Sobre Nosotros</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About Area End-->
+<!-- Team Start -->
+<div class="team-area section-padding30">
+    <div class="container">
+        <div class="row">
+            <div class="cl-xl-7 col-lg-8 col-md-10">
+                <!-- Section Tittle -->
+                <div class="section-tittles mb-70">
+                    <h2>Nuestros Patrocinadores</h2>
+                    <span>Gracias a ellos esto es posible </span>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- single Tem -->
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+                <div class="single-team mb-30">
+                    <div class="team-img">
+                        <img src="{% static 'core/assets/img/gallery/team2.png'%}" alt="">
+                    </div>
+                    <div class="team-caption">
+                        <h3><a href="#">Arturo Prat</a></h3>
+                        <span>Diseñador</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+                <div class="single-team mb-30">
+                    <div class="team-img">
+                        <img src="{% static 'core/assets/img/gallery/team3.png'%}" alt="">
+                    </div>
+                    <div class="team-caption">
+                        <h3><a href="#">Julio Tapia</a></h3>
+                        <span>Diseñador</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+                <div class="single-team mb-30">
+                    <div class="team-img">
+                        <img src="{% static 'core/assets/img/gallery/team1.png'%}" alt="">
+                    </div>
+                    <div class="team-caption">
+                        <h3><a href="#">Aristóteles</a></h3>
+                        <span>Diseñador</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
